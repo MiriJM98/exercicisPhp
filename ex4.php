@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 $a=8;
 $a += 2;
@@ -13,3 +15,5 @@ echo "<p> $a";
 $a--;
 echo "<p> $a";
 ?>
+</body>
+</html>

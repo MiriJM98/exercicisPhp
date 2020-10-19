@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 $queesaixo ="Hola";
 echo "Això és un: ".gettype($queesaixo) . "<br>";
@@ -10,3 +12,5 @@ echo "Això és un: ".gettype($queesaixo) . "<br>";
 $queesaixo= null;
 echo "Això és un: ".gettype($queesaixo) . "<br>";
 ?>
+</body>
+</html>

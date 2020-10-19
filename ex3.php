@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 $x=10;
 $y=7;
@@ -12,3 +14,5 @@ echo "<p> $x / $y = $resultat";
 $resultat= $x % $y;
 echo "<p> $x % $y = $resultat";
 ?>
+</body>
+</html>

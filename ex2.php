@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 echo "El 25 de Desembre, fum, fum, fum";
 $a="fum";
@@ -7,3 +9,5 @@ $a="Desembre";
 $b="fum";
 echo "<p> El 25 de $b, $a, $a, $a";
 ?>
+</body>
+</html>
