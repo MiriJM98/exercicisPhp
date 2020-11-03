@@ -6,30 +6,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Nom no rebut<br/>";
         $nom = '';
     }
-    if ($codi == '') {
-        echo "Codi esta buit<br/>";
-    }
-    if ($dni == '') {
-        echo "DNI esta buit<br/>";
-    }
-    if ($nom == '') {
-        echo "Nom esta buit<br/>";
-    }
-    if ($lli1 == '') {
-        echo "Llinatge1 esta buit<br/>";
-    }
-    if ($lli2 == '') {
-        echo "Llinatge2 esta buit<br/>";
-    }
-    if ($data == '') {
-        echo "Data esta buit<br/>";
-    }
-    if ($tel == '') {
-        echo "Telefon esta buit<br/>";
-    }
-    if ($email == '') {
-        echo "Email esta buit<br/>";
-    }
 
     $codi = isset($_POST["CODI"]) ? $_POST["CODI"] : '';
     $dni = isset($_POST["DNI"]) ? $_POST["DNI"] : '';

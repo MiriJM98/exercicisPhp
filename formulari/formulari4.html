@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Formulari 4</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h2>Inscripció a un grau superior</h2>
+    <form method="POST" action="inscripicio.php">
+        <p>Nom i cognoms: (*) <input type="text" name="nom"></p>
+        <p>DNI: (*) <input type="text" name="dni"></p>
+        <p>Direcció: <input type="text" name="dir"></p>
+        <p>Email: (*) <input type="text" name="email"></p>
+        <p>Telèfon: <input type="tel" name="tel"></p>
+        <p>Localitat: <input type="text" name="loc"></p>
+        <p>Codi postal: <input type="text" name="postal"></p>
+        <p>Província: <input type="text" name="pro"></p>
+        <p>Titulació amb la qual s'accedeix: </p>
+        <p><select name="titols[ ]" multiple="multiple">
+            <option value="curs pont">Curs pont</option>
+            <option value="grau mitja">Grau mitjà</option>
+            <option value="batxillerat">Batxillerat</option>
+        </select>
+        </p>
+        <p>Nota mitja de la titulació: (*) <input type="text" name="nota"></p>
+        <p>Major d'edat: <input type="radio" name="edat" value="si">Sí
+        <input type="radio" name="edat" value="no">No</p>
+        <p>Nombre de germans que no treballen (en cas de no estar emancipat): <input type="number" name="germans"></p>
+        <p><button type="reset" name="esborrar">Borrar</button>
+        <button type="submit" name="enviar">Enviar</button></p>
+    </form>
+</body>
+
+</html>
