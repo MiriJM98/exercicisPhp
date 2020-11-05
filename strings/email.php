@@ -10,6 +10,7 @@
         <h3>Validació d'un email</h3>
         <label for="email">Email:</label>
         <input type="text" name="email">
+        <button type="submit" name="enviar">Enviar</button>
     </form>
 </body>
 
