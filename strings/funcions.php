@@ -24,3 +24,14 @@ function validaData($dataString)
         echo "<b>$dataString</b> no és una data vàlida.";
     }
 }
+
+function validaNif($nif)
+{
+    $lletra = substr($nif, -1);
+    $numeros = substr($nif, 0, -1);
+    if (substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros % 23, 1) == $lletra && strlen($lletra) == 1 && strlen($numeros) == 8) {
+        echo "<b>$nif</b> és un NIF vàlid.";
+    } else {
+        echo "<b>$nif</b> no és un NIF vàlid.";
+    }
+}
