@@ -8,25 +8,25 @@
 <body>
     <h2>Inscripció a un grau superior</h2>
     <form method="POST" action="inscripicio.php">
-        <p>Nom i cognoms: (*) <input type="text" name="nom"></p>
-        <p>DNI: (*) <input type="text" name="dni"></p>
+        <p>Nom i cognoms: (*) <input type="text" name="nom" required></p>
+        <p>DNI: (*) <input type="text" name="dni" required></p>
         <p>Direcció: <input type="text" name="dir"></p>
-        <p>Email: (*) <input type="text" name="email"></p>
+        <p>Email: (*) <input type="text" name="email" required></p>
         <p>Telèfon: <input type="tel" name="tel"></p>
         <p>Localitat: <input type="text" name="loc"></p>
         <p>Codi postal: <input type="text" name="postal"></p>
         <p>Província: <input type="text" name="pro"></p>
         <p>Titulació amb la qual s'accedeix: </p>
-        <p><select name="titols[ ]" multiple="multiple">
-            <option value="curs pont">Curs pont</option>
-            <option value="grau mitja">Grau mitjà</option>
-            <option value="batxillerat">Batxillerat</option>
+        <p><select name="titols[ ]" size="3">
+            <option value="Curs pont">Curs pont</option>
+            <option value="Grau mitja">Grau mitjà</option>
+            <option value="Batxillerat">Batxillerat</option>
         </select>
         </p>
-        <p>Nota mitja de la titulació: (*) <input type="text" name="nota"></p>
+        <p>Nota mitja de la titulació: (*) <input type="number" name="nota" min="0" max="10" required></p>
         <p>Major d'edat: <input type="radio" name="edat" value="si">Sí
         <input type="radio" name="edat" value="no">No</p>
-        <p>Nombre de germans que no treballen (en cas de no estar emancipat): <input type="number" name="germans"></p>
+        <p>Nombre de germans que no treballen (en cas de no estar emancipat): <input type="number" name="germans" min="0"></p>
         <p><button type="reset" name="esborrar">Borrar</button>
         <button type="submit" name="enviar">Enviar</button></p>
     </form>
