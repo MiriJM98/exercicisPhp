@@ -1,12 +1,14 @@
 <?php
+session_start();
 function valida($usuari, $contrasenya)
 {
     $authFile = file("pass.txt");
     if (in_array("$usuari:$contrasenya\r\n", $authFile)) {
-        $validacioCorrecte = TRUE;
         echo "Validació correcte";
+        $_SESSION['sessio'] = $usuari;
+        echo "<p><li><a href='comprova.php'>Enllaç a comprova</a></li></p>";
+        echo "<p><li><a href='logout.php'>Enllaç a logout</a></li></p>";
     } else {
-        $validacioCorrecte = FALSE;
         echo "Validació incorrecte";
     }
 }
