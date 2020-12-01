@@ -17,9 +17,13 @@ $sql = "select id_usuari,nom,email,password ";
 $sql .= "from usuaris";
 $sentencia = $con->query($sql) or die("Error SQL:  $sql");
 
+echo "<table>";
+echo "<tr><th>Id Usuari</th><th>Nom</th><th>Email</th><th>Password</th></tr>";
 if ($result = $mysqli->query($sql)) {
     while ($row = $result->fetch_assoc()) {
-        echo $row["id_usuari"] . '-' . $row["nom"] . "-" . $row["email"] . '-' . $row["password"] . "<br/>";
+        echo "<tr>";
+        echo "<td>" . $row["id_usuari"] . "</td>" . "<td>" . $row["nom"] . "</td>" . "<td>" . $row["email"] . "</td>" . "<td>" . $row["password"] . "</td>";
     }
     $result->free();
 }
+echo "</table>";
